@@ -1,4 +1,4 @@
-# Angular Databinding Tutorial: <a href="https://jmmonjeremy.github.io/w3s5-databinding-server-example/" target="_blank">Wk3 Section5 Server/Blueprint</a>
+# Angular Databinding Tutorial: <a href="https://jmmonjeremy.github.io/w3s5-databinding-server-example/" target="_blank">Wk3 Sec5 Server/Blueprint</a>
 Repository for my BYUI WDD 430 Web Full-Stack Development class
 # ProjectTemplate
 
