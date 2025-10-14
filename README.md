@@ -1,4 +1,4 @@
-# Angular Template Creation: <a href="https://jmmonjeremy.github.io/project-template/" target="_blank">Wk1 Section1 Task1</a>
+# Angular Databinding Tutorial: <a href="https://jmmonjeremy.github.io/w3s5-databinding-server-example/" target="_blank">Wk3 Section5 Server/Blueprint</a>
 Repository for my BYUI WDD 430 Web Full-Stack Development class
 # ProjectTemplate
 

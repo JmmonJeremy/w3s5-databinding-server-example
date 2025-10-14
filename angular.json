@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-template": {
+    "w3s5-databinding-server-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "project-template:build:production"
+              "buildTarget": "w3s5-databinding-server-example:build:production"
             },
             "development": {
-              "buildTarget": "project-template:build:development"
+              "buildTarget": "w3s5-databinding-server-example:build:development"
             }
           },
           "defaultConfiguration": "development"
