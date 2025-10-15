@@ -1,0 +1,70 @@
+####### Create (Clone) a project copy for a new assignment starting #############################################################################################
+    #1 Make a copy by opening the terminal where you want the folder to exist and enter this command:
+git clone <repository link> <new project name>
+    #2 Move into the new project folder in the terminal with the command:
+cd <project name>
+    #3 Unlink this local copy from the repository it came from with the command:
+git remote remove origin
+    #4 In the angular.json file update the project name from "project-template" in three places to new name by:
+     -1 Selecting the name and hitting the keys Ctrl + F
+     -2 Then click the arrow next to the find box to open the Replace box
+     -3 Then enter the new name and click the "Replace All" button on the far right of the box
+    #5 Change the link for the page in the README.md file by updating the old repository name to the new one, etc
+    #6 Update the project name in the docs/index.html base tag href value and title tag string value
+    #7 Update the project name in the src/index.html title tag string value
+    #8 Install all of the dependencies and devDependencies listed in the package.json file with the command:
+npm install 
+    #9 Make any desired changes in HTML code, etc and if changes are made run the following code to apply to production view:
+ng build --configuration production --output-path docs --base-href /<repository-name>/
+    #10 Create a repository from VS Code, link the project to it, & push the code up
+    Option 1- from the terminal enter the commands:
+git add .
+git commit -m "Set up project"
+gh repo create <name for repository> --public --source=. --remote=origin --push     
+    Option 2- from the VS Code GUI's SOURCE CONTROL:
+    - Commit the changes with a comment
+    - Click the Publish Branch button
+    #11 Set up GitHub Pages for the new repo by:
+       1- clicking on Settings and selecting Pages from the side menu
+       2- Under Branch select main for branch, /docs for folder and click Save
+
+####### Build the dev version of the project & launch it in http://localhost:4200/ with the command:   ##########################################################
+    #1 Build and Open Manually
+ng serve 
+    (Open the browser to http://localhost:4200/ to view the app)
+    #2 Open automatically with the command:
+ng serve --open
+    #3 Open to a different port number with the command:
+ng serve --port 4300
+    #4 Shorthand for the commands:
+ng s -o -p 4300
+
+####### Build the production version of the project & launch with GitHub Pages ##################################################################################
+    #1 To build a /docs folder with deployable code enter the command
+ng build --configuration production --output-path docs --base-href /<repository-name>/
+    #2 Go to GitHub and set up GitHub Pages to deploy your Repository from the /docs folder
+    #3 Launch your project site into the browser with the URL of 
+       https://<github-account-name>.github.io/<repo-name>/ 
+       ie. https://jmmonjeremy.github.io/my-first-app/ 
+    #4 For easy access add a link to your repository’s README.md file with the code:
+       [<Link-Text>](URL-Address)
+       ie. [My First App](https://jmmonjeremy.github.io/my-first-app/)
+       
+####### Create a starting Angular Project #######################################################################################################################
+    #1 Create a new project by entering the command:
+ng new project-template --no-strict --standalone false --routing false
+    #2 Answer the following questions by using arrow keys and entering when the selection is highlighted or entering the letter answer as follows:
+       a.	Which stylesheet format would you like to use?
+          CSS
+       b.	Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
+          N
+       c.	Do you want to create a ‘zoneless’ application without zone.js?
+          N
+       d.	Which AI tools do you want to configure with Angular best practice? https://angular.dev/ai/develop-with-ai (Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter to proceed)
+          None
+
+
+
+
+
+
